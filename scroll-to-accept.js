@@ -14,3 +14,5 @@ const ob = new IntersectionObserver(obCallback, {
   root: terms,
   threshold: 1,
 });
+
+ob.observe(terms.lastElementChild);
