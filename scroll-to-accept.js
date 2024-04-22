@@ -9,3 +9,8 @@ function obCallback(payload) {
     ob.unobserve(terms.lastElementChild);
   }
 }
+
+const ob = new IntersectionObserver(obCallback, {
+  root: terms,
+  threshold: 1,
+});
